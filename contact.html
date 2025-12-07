@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Silicon Tec</title>
+    <link rel="icon" type="image/png" href="images/logo/Logo.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+.navbar {
+    box-shadow: 0 6px 20px #2db9d256 !important;
+}
+
+
+
+        .active{
+            color: #2DB9D2 !important;
+        }
+         .navbar-brand{
+
+            color: rgb(45, 185, 210);
+        }
+         .my-toggler {
+  box-shadow: 0 6px 20px #2db9d256 !important;
+}
+        .navbar{
+
+            background-color: white !important;
+                        color: #2DB9D2 !important;
+        }
+         .collapse a {
+            color: black;
+        }
+
+        .navbar-nav .nav-link:hover {
+    color: #2DB9D2 !important;   /* your color */
+}
+    </style>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top fw-bold">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="/images/logo/Logo.png" style="height: 50px;"/> SILICON TECH</a>
+            <button class="navbar-toggler my-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="hero-section d-flex align-items-center" style="background-image: url(/images/freepik__plain-blank-generate-a-past-paper-ui-app-white-moc__32265.png);">
+        <div class="container text-center text-white">
+            <h1 class="display-4 fw-bold">Contact Us</h1>
+            <p class="lead">Get in touch for your smart home needs.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Contact Form</h2>
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h2>Quick Contact</h2>
+                    <div class="mb-3">
+                        <i class="fab fa-whatsapp fa-2x text-success me-3"></i>
+                        <a href="https://wa.me/1234567890" class="text-decoration-none">WhatsApp: +1 (234) 567-8900</a>
+                    </div>
+                    <div class="mb-3">
+                        <i class="fas fa-phone fa-2x text-primary me-3"></i>
+                        <a href="tel:+1234567890" class="text-decoration-none">Phone: +1 (234) 567-8900</a>
+                    </div>
+                    <div class="mb-3">
+                        <i class="fas fa-envelope fa-2x text-danger me-3"></i>
+                        <a href="mailto:info@silicontec.com" class="text-decoration-none">Email: info@silicontec.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Embed -->
+     <!-- I have hide the map because we dont have a physical office right now. -->
+    <section class="py-5 bg-light" style="display: none;"> 
+        <div class="container">
+            <h2 class="text-center mb-4">Find Us</h2>
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.241264875!2d-73.98785368459375!3d40.75889597932781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1623456789012!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-5 bg-primary text-white text-center">
+        <div class="container">
+            <h2>Talk to an Expert Today</h2>
+            <p class="lead">Our team is ready to help you automate your home.</p>
+            <a href="#contactForm" class="btn btn-light btn-lg">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Silicon Tec</h5>
+                    <p>Your trusted partner in smart home automation.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="products.html" class="text-white">Products</a></li>
+                        <li><a href="services.html" class="text-white">Services</a></li>
+                        <li><a href="about.html" class="text-white">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

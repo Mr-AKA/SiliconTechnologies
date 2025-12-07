@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silicon Tec - Smart Home Automation</title>
+     <link rel="icon" type="image/png" href="images/logo/Logo.png"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        
+        .btnColor{
+            background-color: #2DB9D2 !important;
+        }
+        .navbar {
+     box-shadow: 0 6px 20px #2db9d256 !important;
+}
+        /*NAVI BAR STYLES */
+           .active{
+            color: #2DB9D2 !important;
+        }
+        
+        .my-toggler {
+  background-color: #2DB9D2; /* your color */
+}
+      
+        .navbar{
+
+            background-color: white !important;
+                        color: #2DB9D2 !important;
+        }
+        .collapse a{
+            color: black;
+        }
+
+        .navbar-nav .nav-link:hover {
+    color: #2DB9D2 !important;   /* your color */
+}
+      
+        .navbar-brand{
+
+            color: #2DB9D2;
+        }
+
+        
+         .content-block {
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            border-radius: 12px;
+            backdrop-filter: blur(1px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease-in-out;
+        }
+        .hero-section {
+    background-image: url(/images/slider3.jpg);
+    background-size:cover;
+    background-position: center;
+    height: 80vh;
+}
+
+        /*SMALL DEVICES*/
+
+        @media (max-width: 699px) {
+            .btn-responsive {
+                /* Smaller button size on mobile */
+                padding: 0.5rem 1rem;
+                font-size: 1rem;
+            }
+            .hero-section {
+               
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 60vh;
+
+            }
+            
+            .request-btn{
+                display: none;
+            }
+            .content-block {
+          
+            margin: 5rem;
+        }
+
+
+        }
+
+        /* MEDIUM AND LARGER DEVICES */
+
+
+
+    </style>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top fw-bold">
+        <div class="container">
+            
+            <a class="navbar-brand" href="#"><img src="/images/logo/Logo.png" style="height: 50px;"/> SILICON TECH</a>
+            <button class="navbar-toggler my-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 col-md-7 
+                            mx-auto mx-md-0 
+                            text-white content-block
+                            text-center text-md-start">
+
+                    <h1 class="display-4 fw-bold">Control Your Home From Anywhere</h1>
+                    <p class="lead mt-3 request-btn">Affordable smart home solutions for lighting, security, and sensing, powered by Dapher.</p>
+                    
+                    <div class="mt-4 d-flex flex-column flex-sm-row justify-content-center justify-content-md-start gap-3">
+                        <a href="#contact" class="btn btn-lg shadow-lg btnColor rounded-4">Get Started</a>
+                        <a href="#" class="btn btn-outline-light btn-lg  request-btn rounded-4">Request Installation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Features</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                             <img src="/images/daynnightsensor.jpg" alt="" style="height: 200px;">
+                            <h5>Smart Lighting</h5>
+                            <p>Control your lights remotely with voice commands and automation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                           <img src="/images/daynnightsensor.jpg" alt="" style="height: 200px;">
+                            <h5>Smart Security</h5>
+                            <p>Monitor and secure your home with advanced cameras and sensors.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="/images/daynnightsensor.jpg" alt="" style="height: 200px;">
+                            <h5>Energy Monitoring</h5>
+                            <p>Track and optimize your energy usage for efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="/images/daynnightsensor.jpg" alt="" style="height: 200px;">
+                            <h5>App Control</h5>
+                            <p>Manage your smart home from your smartphone anywhere.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                           <img src="/images/daynnightsensor.jpg" alt="" style="height: 200px;">
+                            <h5>Voice Assistant Integration</h5>
+                            <p>Integrate with Alexa, Google Home, and Siri for seamless control.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="/images/daynnightsensor.jpg" alt="" style="height: 200px;">
+                            <h5>Smart Sensors</h5>
+                            <p>Detect motion, smoke, and more with our IoT sensor collection.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories Preview -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Product Categories</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="/images/Daphar.png" class="card-img-top" alt="Smart Bulbs">
+                        <div class="card-body text-center">
+                            <h5>Smart Bulbs</h5>
+                            <p>Energy-efficient lighting with color control.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="/images/Daphar.png" class="card-img-top" alt="Smart Plugs">
+                        <div class="card-body text-center">
+                            <h5>Smart Plugs</h5>
+                            <p>Control any device remotely.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="/images/Daphar.png" class="card-img-top" alt="Smart Cameras">
+                        <div class="card-body text-center">
+                            <h5>Smart Cameras</h5>
+                            <p>High-definition security monitoring.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="/images/Daphar.png" class="card-img-top" alt="Smart Sensors">
+                        <div class="card-body text-center">
+                            <h5>Smart Sensors Collection</h5>
+                            <p>Comprehensive sensing for your home.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-5 bg-primary text-white" style="background-color: #2DB9D2 !important;">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Choose Silicon Technologies?</h2>
+            <div class="row g-4">
+                <div class="col-md-2 text-center">
+                    <i class="fas fa-lock fa-2x mb-2"></i>
+                    <h6>Safe</h6>
+                </div>
+                <div class="col-md-2 text-center">
+                    <i class="fas fa-leaf fa-2x mb-2"></i>
+                    <h6>Energy Efficient</h6>
+                </div>
+                <div class="col-md-2 text-center">
+                    <i class="fas fa-hand-pointer fa-2x mb-2"></i>
+                    <h6>Easy to Use</h6>
+                </div>
+                <div class="col-md-2 text-center">
+                    <i class="fas fa-dollar-sign fa-2x mb-2"></i>
+                    <h6>Affordable</h6>
+                </div>
+                <div class="col-md-2 text-center">
+                    <i class="fas fa-wifi fa-2x mb-2"></i>
+                    <h6>Remote Control</h6>
+                </div>
+                <div class="col-md-2 text-center">
+                    <i class="fas fa-cogs fa-2x mb-2"></i>
+                    <h6>Automation</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h2>Ready to Automate Your Home?</h2>
+            <p class="lead">Get started with our expert installation services.</p>
+            <a href="contact.html" class="btn btnColor rounded-4 btn-lg btncolor">Get Installation Quote</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Silicon Tec</h5>
+                    <p>Your trusted partner in smart home automation.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="products.html" class="text-white">Products</a></li>
+                        <li><a href="services.html" class="text-white">Services</a></li>
+                        <li><a href="about.html" class="text-white">About</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
